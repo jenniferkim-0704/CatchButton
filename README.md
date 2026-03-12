@@ -18,8 +18,11 @@
 <img width="802" height="489" alt="스크린샷 2026-03-12 125119" src="https://github.com/user-attachments/assets/829780c4-9d61-4564-9837-112b3afb4f65" />
 
 - 4단계 코드의 실행 스크린샷
+<img width="949" height="547" alt="스크린샷 2026-03-12 130443" src="https://github.com/user-attachments/assets/d1098bdd-5d87-4f83-acab-325b850e682e" />
+<img width="802" height="489" alt="스크린샷 2026-03-12 130455" src="https://github.com/user-attachments/assets/c36b5f29-bbff-4370-ac59-df9231e1a7c1" />
 
 ## 구현 시 어려웠던 점
 - 버튼이 폼 밖으로 나가지 않게하기 위해 코드를 설정하는 것이 어려웠다.
 - 버튼을 잡았을때 창을 띄우는게 힘들었다.
-- 점수구현이 어려웠다.
+- 점수 구현이 어려웠다.
+- 점수계산 하는 것이 어려웠다.
