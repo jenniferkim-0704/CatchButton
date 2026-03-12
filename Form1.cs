@@ -45,7 +45,12 @@ namespace CatchButton
             // 버튼을 잡았을 때 소리 재생 후 축하 메시지 표시
             System.Media.SystemSounds.Beep.Play();
             score += 100; // 점수 증가
+
             MessageBox.Show("축하합니다~!", "잡았습니다", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            // 버튼 크기 10% 감소
+            RunningButton.Width = (int)(RunningButton.Width * 0.9);
+            RunningButton.Height = (int)(RunningButton.Height * 0.9);
         }
     }
 }
