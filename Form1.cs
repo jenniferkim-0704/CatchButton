@@ -4,6 +4,7 @@ namespace CatchButton
     {
         // 점수 변수
         int score = 0;
+        int missCount = 0; // 놓친 횟수 변수
         // 난수 생성기(연속 호출 시 같은 시드 문제 방지)
         private readonly Random rd = new Random();
         public Form1()
@@ -38,6 +39,13 @@ namespace CatchButton
             // 5. 시각적 피드백( 폼 제목 표시줄에 좌표와 점수출력)
             this.Text = $"버튼위치: ({nextX}, {nextY})  |  점수: {score}";
 
+            missCount++; // 놓친 횟수 증가
+            if (missCount >= 20)
+            {
+                MessageBox.Show("Game Over", "20번 놓쳤습니다.");
+                RunningButton.Enabled = false; // 버튼 비활성화
+            }
+
         }
 
         private void RunningButton_Click(object? sender, EventArgs e)
@@ -46,7 +54,7 @@ namespace CatchButton
             System.Media.SystemSounds.Beep.Play();
             score += 100; // 점수 증가
 
-            MessageBox.Show("축하합니다~!", "잡았습니다", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("축하합니다~!", "잡았습니다");
 
             // 버튼 크기 10% 감소
             RunningButton.Width = (int)(RunningButton.Width * 0.9);
