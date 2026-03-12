@@ -44,6 +44,23 @@ namespace CatchButton
             {
                 MessageBox.Show("Game Over", "20번 놓쳤습니다.");
                 RunningButton.Enabled = false; // 버튼 비활성화
+
+                // 다음 게임 버튼
+                DialogResult result = MessageBox.Show("다시 시작 할래요?", "다음 게임", MessageBoxButtons.YesNo);
+                if (result == DialogResult.Yes)
+                {
+                    score = 0;
+                    missCount = 0;
+
+                    RunningButton.Enabled = true;
+
+                    RunningButton.Width = 227;
+                    RunningButton.Height = 73;
+
+                    RunningButton.Location = new Point(100, 100);
+
+                    this.Text = $"버튼위치: ({nextX}, {nextY})  |  점수: {score}";
+                }
             }
 
         }
