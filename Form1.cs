@@ -5,6 +5,8 @@ namespace CatchButton
         public Form1()
         {
             InitializeComponent();
+            // 버튼 클릭 시 메시지박스 표시
+            RunningButton.Click += RunningButton_Click;
         }
 
         private void RunningButton_MouseEnter(object sender, EventArgs e)
@@ -28,6 +30,12 @@ namespace CatchButton
 
             // 5. 시각적피드백(폼제목표시줄에좌표출력)
             this.Text = $"버튼위치: ({nextX}, {nextY})";
+        }
+
+        private void RunningButton_Click(object? sender, EventArgs e)
+        {
+            // 버튼을 잡았을 때 고정된 축하 메시지 표시
+            MessageBox.Show("축하합니다~!", "잡았습니다", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
