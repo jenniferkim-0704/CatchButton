@@ -2,6 +2,10 @@ namespace CatchButton
 {
     public partial class Form1 : Form
     {
+        // 점수 변수
+        int score = 0;
+        // 난수 생성기(연속 호출 시 같은 시드 문제 방지)
+        private readonly Random rd = new Random();
         public Form1()
         {
             InitializeComponent();
@@ -21,21 +25,26 @@ namespace CatchButton
             int maxY = this.ClientSize.Height;
 
             // 3. 랜덤 좌표 추출 (0 ~ 최대 가용치 사이)
-            // Form1안에 버튼이 완전히 들어가도록 하기 위해 버튼의 크기만큼 빼줌
-            int nextX = rd.Next(0, maxX-227);
-            int nextY = rd.Next(0, maxY-73);
+            int nextX = rd.Next(0, maxX - 227);
+            int nextY = rd.Next(0, maxY - 73);
+
+            RunningButton.Location = new Point(nextX, nextY);
+
+            score -= 10; // 점수 감소
 
             // 4. 위치 할당 (새로운 Point 객체 생성)
             RunningButton.Location = new Point(nextX, nextY);
 
-            // 5. 시각적피드백(폼제목표시줄에좌표출력)
-            this.Text = $"버튼위치: ({nextX}, {nextY})";
+            // 5. 시각적 피드백( 폼 제목 표시줄에 좌표와 점수출력)
+            this.Text = $"버튼위치: ({nextX}, {nextY})  |  점수: {score}";
+
         }
 
         private void RunningButton_Click(object? sender, EventArgs e)
         {
             // 버튼을 잡았을 때 소리 재생 후 축하 메시지 표시
-            System.Media.SystemSounds.Exclamation.Play();
+            System.Media.SystemSounds.Beep.Play();
+            score += 100; // 점수 증가
             MessageBox.Show("축하합니다~!", "잡았습니다", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }

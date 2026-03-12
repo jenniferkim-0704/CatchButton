@@ -35,7 +35,7 @@
             // 
             RunningButton.BackColor = Color.DeepSkyBlue;
             RunningButton.Font = new Font("맑은 고딕", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 129);
-            RunningButton.ForeColor = Color.WhiteSmoke;
+            RunningButton.ForeColor = Color.White;
             RunningButton.Location = new Point(268, 146);
             RunningButton.Name = "RunningButton";
             RunningButton.Size = new Size(227, 73);
