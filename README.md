@@ -14,6 +14,9 @@
 <img width="944" height="532" alt="스크린샷 2026-03-12 121231" src="https://github.com/user-attachments/assets/fa2703ee-c6f6-4148-8b1c-411109ba9d0b" />
 
 - 3단계 코드의 실행 스크린샷
+<img width="802" height="489" alt="스크린샷 2026-03-12 124905" src="https://github.com/user-attachments/assets/0cb0f6f8-7928-4d7a-b7a7-af68a576c379" />
+<img width="802" height="489" alt="스크린샷 2026-03-12 125119" src="https://github.com/user-attachments/assets/829780c4-9d61-4564-9837-112b3afb4f65" />
+
 - 4단계 코드의 실행 스크린샷
 
 ## 구현 시 어려웠던 점
