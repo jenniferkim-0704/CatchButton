@@ -11,8 +11,11 @@
 <img width="802" height="489" alt="스크린샷 2026-03-12 115551" src="https://github.com/user-attachments/assets/c4e817d6-ae17-4a24-98df-39907d5fd36c" />
 
 - 2단계 코드의 실행 스크린샷
+<img width="944" height="532" alt="스크린샷 2026-03-12 121231" src="https://github.com/user-attachments/assets/fa2703ee-c6f6-4148-8b1c-411109ba9d0b" />
+
 - 3단계 코드의 실행 스크린샷
 - 4단계 코드의 실행 스크린샷
 
 ## 구현 시 어려웠던 점
 - 버튼이 폼 밖으로 나가지 않게하기 위해 코드를 설정하는 것이 어려웠다.
+- 버튼을 잡았을때 창을 띄우는게 힘들었다.
