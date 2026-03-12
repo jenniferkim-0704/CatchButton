@@ -19,7 +19,6 @@
 
 - 4단계 코드의 실행 스크린샷
 <img width="949" height="547" alt="스크린샷 2026-03-12 130443" src="https://github.com/user-attachments/assets/d1098bdd-5d87-4f83-acab-325b850e682e" />
-<img width="802" height="489" alt="스크린샷 2026-03-12 130455" src="https://github.com/user-attachments/assets/c36b5f29-bbff-4370-ac59-df9231e1a7c1" />
 <img width="1060" height="603" alt="스크린샷 2026-03-12 131410" src="https://github.com/user-attachments/assets/ebf4dc39-2e6f-4610-9eb1-649cbaeea572" />
 <img width="802" height="489" alt="스크린샷 2026-03-12 131419" src="https://github.com/user-attachments/assets/7e17a642-570c-41e4-978e-51bbb48b3328" />
 
