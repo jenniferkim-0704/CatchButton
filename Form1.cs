@@ -34,7 +34,8 @@ namespace CatchButton
 
         private void RunningButton_Click(object? sender, EventArgs e)
         {
-            // 버튼을 잡았을 때 고정된 축하 메시지 표시
+            // 버튼을 잡았을 때 소리 재생 후 축하 메시지 표시
+            System.Media.SystemSounds.Exclamation.Play();
             MessageBox.Show("축하합니다~!", "잡았습니다", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
