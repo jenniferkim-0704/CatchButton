@@ -19,6 +19,7 @@ namespace CatchButton
             int maxY = this.ClientSize.Height;
 
             // 3. 랜덤 좌표 추출 (0 ~ 최대 가용치 사이)
+            // Form1안에 버튼이 완전히 들어가도록 하기 위해 버튼의 크기만큼 빼줌
             int nextX = rd.Next(0, maxX-227);
             int nextY = rd.Next(0, maxY-73);
 
